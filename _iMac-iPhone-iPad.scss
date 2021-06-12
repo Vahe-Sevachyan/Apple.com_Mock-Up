@@ -1,6 +1,6 @@
 // **********ipad Pro Section***************
 .iPadProImage{
-    background-image: url("../images/ipadPro.png");
+    background-image: url("images/ipadPro.png");
     width: 100%;
     height: 74vh;
     overflow-x: hidden;
@@ -37,7 +37,7 @@
     width: 100%;
     overflow-x: hidden;
     background-size: contain;
-    background-image: url("../images/iphone.png");
+    background-image: url("images/iphone.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -70,7 +70,7 @@
     height: 74vh;
     overflow-x: hidden;
     background-size: contain;
-    background-image: url("../images/iMac.png");
+    background-image: url("images/iMac.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -99,15 +99,15 @@
 // **********iMac Section***************
 @media (max-width:792px){
     .iPadProImage{
-        background-image: url("../images/mobile/iPad-Small.png");
+        background-image: url("images/mobile/iPad-Small.png");
         height: 50vh;
     }
     .iMacImage{
-        background-image: url("../images/mobile/iMac-Small.png");
+        background-image: url("images/mobile/iMac-Small.png");
         height: 50vh;
     }
     .iPhoneImage{
-        background-image: url("../images/mobile/iphone-Grid-Small.png");
+        background-image: url("images/mobile/iphone-Grid-Small.png");
         height: 50vh;
     }
     .iPadProLinks{
