@@ -323,7 +323,7 @@ li a {
 }
 @media (max-width: 360px) {
   .iPadProLinks {
-    margin-top: 8rem;
+    margin-top: 7.5rem;
     font-size: 4rem;
     max-width: 18rem;
   }
