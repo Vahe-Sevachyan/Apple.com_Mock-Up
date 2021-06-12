@@ -1,0 +1,930 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: poppins;
+}
+
+.navItems {
+  font-size: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 100rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 200;
+}
+
+.navBarContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #3a3a3a;
+  color: whitesmoke;
+  padding-top: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+li a {
+  color: white;
+}
+
+.DeliveryHeader {
+  font-weight: 300;
+  font-size: 1.3rem;
+  max-width: 57rem;
+  margin: auto;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.shopOnlineHeader {
+  color: #4e9dec;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.deliveryHeaderContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+.apple-svg {
+  width: 1.7rem;
+}
+
+.magnifying-glass {
+  padding-top: 2px;
+  width: 2rem;
+}
+
+.shopping-bag {
+  width: 2rem;
+  color: white;
+}
+
+.hamburger {
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  margin-bottom: 1px;
+}
+
+.twoLineHamburgerMenu {
+  margin-top: 5px;
+  height: 0.9rem;
+}
+
+@media (max-width: 792px) {
+  .navItems {
+    display: none;
+  }
+
+  .mobileNavigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .apple-svg {
+    padding-bottom: 5px;
+  }
+
+  .shopping-bag {
+    padding-bottom: 5px;
+  }
+
+  .shopOnlineHeader {
+    font-size: 1.1rem;
+  }
+
+  .DeliveryHeader {
+    font-size: 1.1rem;
+  }
+
+  .DeliveryHeader {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 792px) {
+  .mobileNavigation {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .shopOnlineHeader {
+    font-size: 0.9rem;
+  }
+
+  .DeliveryHeader {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .shopOnlineHeader {
+    font-size: 0.9rem;
+  }
+
+  .DeliveryHeader {
+    font-size: 0.9rem;
+  }
+}
+.iPadProImage {
+  background-image: url("../images/ipadPro.png");
+  width: 100%;
+  height: 74vh;
+  overflow-x: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.iPadProLinks {
+  font-size: 5rem;
+  max-width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 18rem;
+  font-weight: 300;
+}
+
+.iPadMoreLinks,
+.iPadOrderLinks {
+  color: dodgerblue;
+}
+
+.rightArrow {
+  width: 1.5rem;
+}
+
+.iPadMoreLinks:hover,
+.iPadOrderLinks:hover {
+  text-decoration: underline;
+}
+
+.iPhoneImage {
+  margin-top: 1rem;
+  height: 73vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-size: contain;
+  background-image: url("../images/iphone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.iPhoneLinks {
+  font-size: 5rem;
+  max-width: 21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 21rem;
+  font-weight: 300;
+}
+
+.iPhoneMoreLinks,
+.iPhoneBuy {
+  color: dodgerblue;
+}
+
+.rightArrow {
+  width: 1.5rem;
+}
+
+.iPhoneMoreLinks:hover,
+.iPhoneBuy:hover {
+  text-decoration: underline;
+}
+
+.iMacImage {
+  margin-top: 1rem;
+  width: 100%;
+  height: 74vh;
+  overflow-x: hidden;
+  background-size: contain;
+  background-image: url("../images/iMac.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.iMacLinks {
+  font-size: 5rem;
+  max-width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 18.5rem;
+  font-weight: 300;
+}
+
+.iMacMoreLinks,
+.iMacBuy {
+  color: dodgerblue;
+}
+
+.iMacMoreLinks:hover,
+.iMacBuy:hover {
+  text-decoration: underline;
+}
+
+.rightArrow {
+  width: 1.2rem;
+}
+
+@media (max-width: 792px) {
+  .iPadProImage {
+    background-image: url("../images/mobile/iPad-Small.png");
+    height: 50vh;
+  }
+
+  .iMacImage {
+    background-image: url("../images/mobile/iMac-Small.png");
+    height: 50vh;
+  }
+
+  .iPhoneImage {
+    background-image: url("../images/mobile/iphone-Grid-Small.png");
+    height: 50vh;
+  }
+
+  .iPadProLinks {
+    margin-top: 11.5rem;
+    font-size: 4rem;
+    max-width: 18rem;
+  }
+
+  .iPhoneLinks {
+    margin-top: 18.5rem;
+    font-size: 4rem;
+    max-width: 16rem;
+  }
+
+  .iMacLinks {
+    margin-top: 11.5rem;
+    font-size: 4rem;
+    max-width: 17rem;
+  }
+
+  .rightArrow {
+    width: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .iPadProLinks {
+    margin-top: 9.5rem;
+    font-size: 4rem;
+    max-width: 18rem;
+  }
+
+  .iPhoneLinks {
+    margin-top: 16.5rem;
+    font-size: 4rem;
+    max-width: 16rem;
+  }
+
+  .iMacLinks {
+    margin-top: 9.5rem;
+    font-size: 4rem;
+    max-width: 17rem;
+  }
+}
+@media (max-width: 360px) {
+  .iPadProLinks {
+    margin-top: 8rem;
+    font-size: 4rem;
+    max-width: 18rem;
+  }
+
+  .iPhoneLinks {
+    margin-top: 12.5rem;
+    font-size: 4rem;
+    max-width: 16rem;
+  }
+
+  .iMacLinks {
+    margin-top: 7.5rem;
+    font-size: 4rem;
+    max-width: 17rem;
+  }
+}
+.footerLinks {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 120rem;
+  text-align: left;
+  margin: auto;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+footer a {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #86868b;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footerHeader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.accountContainer,
+.forEducationContainer,
+.forHealthcareContainer,
+.forGovernmentContainer,
+.aboutAppleContainer {
+  margin-top: 1.5rem;
+}
+
+.paragraphContainer p {
+  margin: 1rem;
+}
+
+.paragraphContainer {
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: #86868b;
+  margin: auto;
+  max-width: 120rem;
+  font-size: 2rem;
+  border-bottom: 0.1px solid #bebaba;
+}
+
+footer {
+  background-color: #f5f5f7;
+}
+
+.paragraphContainer p {
+  margin-bottom: 1.2rem;
+}
+
+.callAppleContainer {
+  padding: 1rem 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.callAppleHeading {
+  color: #86868b;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.callAppleBorderBottom {
+  margin: auto;
+  max-width: 118rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  border-bottom: 0.1px solid #bebaba;
+}
+
+.callAppleLink {
+  color: #4e9dec;
+}
+
+.copyRightFooter p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.copyRightFooter {
+  padding: 1rem 1.1rem;
+  font-size: 2.5rem;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyRightLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+span {
+  height: 5rem;
+}
+
+.copyRightLinks ul li a {
+  color: #86868b;
+  font-size: 1.2rem;
+}
+
+li span {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.ft-link {
+  margin-bottom: 0.9rem;
+}
+
+.copyRightFooter p {
+  color: #86868b;
+}
+
+.mobileNavUlLinks a {
+  color: black;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footerMobileNav {
+  color: gray;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerMobileNav ul {
+  margin-top: 1.1rem;
+  width: 100%;
+}
+
+.MobileNavBorderBottom {
+  border-bottom: 0.1px solid #bebaba;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 96.3%;
+  margin: auto;
+}
+
+.mobileNavUlLinks {
+  margin: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobileNavUlLinks a {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.expandible {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 792px) {
+  .footerMobileNav {
+    display: none;
+  }
+
+  .mobileNavUL {
+    width: 100%;
+  }
+}
+@media (max-width: 792px) {
+  .footerLinks {
+    display: none;
+  }
+
+  .callAppleBorderBottom {
+    display: none;
+  }
+
+  .expandible {
+    display: none;
+  }
+
+  .callAppleHeading {
+    padding-bottom: 0;
+  }
+}
+tml {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.gridContainer {
+  margin: auto;
+  width: 99%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64rem, 1fr));
+  grid-template-rows: 3fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  grid-column-gap: auto;
+  grid-row-gap: 3px;
+}
+
+.gridContainer img {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

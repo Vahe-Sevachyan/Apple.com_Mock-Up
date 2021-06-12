@@ -1,0 +1,167 @@
+// **********ipad Pro Section***************
+.iPadProImage{
+    background-image: url("../images/ipadPro.png");
+    width: 100%;
+    height: 74vh;
+    overflow-x: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center; 
+}
+.iPadProLinks{
+    font-size: 5rem;
+    max-width: 23rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 18rem;
+    font-weight: 300;
+}
+.iPadMoreLinks,
+.iPadOrderLinks{
+   color: $LinkColor;
+}
+.rightArrow{
+    width: 1.5rem;
+}
+.iPadMoreLinks:hover,
+.iPadOrderLinks:hover{
+    text-decoration: underline;
+}
+// **********iphone Section***************
+.iPhoneImage{
+    margin-top: 1rem;
+    height: 73vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: contain;
+    background-image: url("../images/iphone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center; 
+}
+.iPhoneLinks{
+    font-size: 5rem;
+    max-width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 21rem;
+    font-weight: 300;
+}
+.iPhoneMoreLinks,
+.iPhoneBuy{
+    color: $LinkColor;
+}
+.rightArrow{
+    width: 1.5rem;
+}
+.iPhoneMoreLinks:hover,
+.iPhoneBuy:hover{
+    text-decoration: underline;
+}
+// **********iMac Section***************
+.iMacImage{
+    margin-top: 1rem;
+    width: 100%;
+    height: 74vh;
+    overflow-x: hidden;
+    background-size: contain;
+    background-image: url("../images/iMac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center; 
+}
+.iMacLinks{
+    font-size: 5rem;
+    max-width: 23rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 18.5rem;
+    font-weight: 300;
+}
+.iMacMoreLinks,
+.iMacBuy{
+    color: $LinkColor;
+}
+.iMacMoreLinks:hover,
+.iMacBuy:hover{
+    text-decoration: underline;
+}
+.rightArrow{
+    width: 1.2rem;
+}
+// **********iMac Section***************
+@media (max-width:792px){
+    .iPadProImage{
+        background-image: url("../images/mobile/iPad-Small.png");
+        height: 50vh;
+    }
+    .iMacImage{
+        background-image: url("../images/mobile/iMac-Small.png");
+        height: 50vh;
+    }
+    .iPhoneImage{
+        background-image: url("../images/mobile/iphone-Grid-Small.png");
+        height: 50vh;
+    }
+    .iPadProLinks{
+        margin-top: 11.5rem;
+        font-size: 4rem;
+        max-width: 18rem;
+    }
+    .iPhoneLinks{
+        margin-top: 18.5rem;
+        font-size: 4rem;
+        max-width: 16rem;
+    }
+    .iMacLinks{
+        margin-top: 11.5rem;
+        font-size: 4rem;
+        max-width: 17rem;
+    }
+    .rightArrow{
+        width: 1rem;
+    }
+}
+
+@media (max-width:375px){
+    .iPadProLinks{
+        margin-top: 9.5rem;
+        font-size: 4rem;
+        max-width: 18rem;
+    }
+    .iPhoneLinks{
+        margin-top: 16.5rem;
+        font-size: 4rem;
+        max-width: 16rem;
+    }
+    .iMacLinks{
+        margin-top: 9.5rem;
+        font-size: 4rem;
+        max-width: 17rem;
+    }
+}
+
+@media (max-width:360px){
+    .iPadProLinks{
+        margin-top: 8rem;
+        font-size: 4rem;
+        max-width: 18rem;
+    }
+    .iPhoneLinks{
+        margin-top: 12.5rem;
+        font-size: 4rem;
+        max-width: 16rem;
+    }
+    .iMacLinks{
+        margin-top: 7.5rem;
+        font-size: 4rem;
+        max-width: 17rem;
+    }
+}

@@ -1,0 +1,19 @@
+.gridContainer{
+    margin: auto;
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(64rem, 1fr));
+    grid-template-rows: 3fr;
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: auto;
+    grid-row-gap: 3px;
+}
+.gridContainer img{
+    width: 100%;
+}
+
+
+
+
+
