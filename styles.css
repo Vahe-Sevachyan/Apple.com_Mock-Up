@@ -302,52 +302,52 @@ li a {
     width: 1rem;
   }
 }
+@media (max-width: 414px) {
+  .iPadProLinks {
+    margin-top: 9.1rem;
+  }
+
+  .iPhoneLinks {
+    margin-top: 14.5rem;
+  }
+
+  .iMacLinks {
+    margin-top: 9rem;
+  }
+}
 @media (max-width: 375px) {
   .iPadProLinks {
     margin-top: 9.5rem;
-    font-size: 4rem;
-    max-width: 18rem;
   }
 
   .iPhoneLinks {
     margin-top: 16.5rem;
-    font-size: 4rem;
-    max-width: 16rem;
   }
 
   .iMacLinks {
     margin-top: 9.5rem;
-    font-size: 4rem;
-    max-width: 17rem;
   }
 }
 @media (max-width: 360px) {
   .iPadProLinks {
     margin-top: 7.5rem;
-    font-size: 4rem;
-    max-width: 18rem;
   }
 
   .iPhoneLinks {
     margin-top: 12.5rem;
-    font-size: 4rem;
-    max-width: 16rem;
   }
 
   .iMacLinks {
     margin-top: 7.5rem;
-    font-size: 4rem;
-    max-width: 17rem;
   }
 }
 .footerLinks {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 120rem;
   text-align: left;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -515,14 +515,6 @@ li span {
   width: 100%;
 }
 
-.MobileNavBorderBottom {
-  border-bottom: 0.1px solid #bebaba;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  width: 96.3%;
-  margin: auto;
-}
-
 .mobileNavUlLinks {
   margin: 0 1.5rem;
   display: -webkit-box;
@@ -533,13 +525,20 @@ li span {
           justify-content: space-between;
 }
 
+.MobileNavBorderBottom {
+  border-bottom: 0.1px solid #bebaba;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 96.3%;
+  margin: auto;
+}
+
 .mobileNavUlLinks a {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   margin-top: 1rem;
 }
 
-.expandible {
-  margin-left: 15px;
+.expandibleHiddenLinkList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,6 +546,10 @@ li span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  top: -15px;
+  margin-left: 15px;
+  display: none;
 }
 
 @media (min-width: 792px) {
@@ -567,12 +570,8 @@ li span {
     display: none;
   }
 
-  .expandible {
-    display: none;
-  }
-
   .callAppleHeading {
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
 }
 tml {
