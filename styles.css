@@ -304,15 +304,15 @@ li a {
 }
 @media (max-width: 414px) {
   .iPadProLinks {
-    margin-top: 9.1rem;
+    margin-top: 10.1rem;
   }
 
   .iPhoneLinks {
-    margin-top: 14.5rem;
+    margin-top: 17rem;
   }
 
   .iMacLinks {
-    margin-top: 9rem;
+    margin-top: 10rem;
   }
 }
 @media (max-width: 375px) {
@@ -330,15 +330,15 @@ li a {
 }
 @media (max-width: 360px) {
   .iPadProLinks {
-    margin-top: 7.5rem;
+    margin-top: 8.5rem;
   }
 
   .iPhoneLinks {
-    margin-top: 12.5rem;
+    margin-top: 13.7rem;
   }
 
   .iMacLinks {
-    margin-top: 7.5rem;
+    margin-top: 8.5rem;
   }
 }
 .footerLinks {
