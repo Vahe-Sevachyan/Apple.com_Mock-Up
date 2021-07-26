@@ -1,30 +1,18 @@
-const plusButton = document.querySelector(".expandiblePlusBtn");
-const linkButton = document.querySelector("#expandibleMobileLink");
-const expandibleHiddenLinks = document.querySelector(".expandibleHiddenLinkList");
+
+let accordionTitle = document.getElementsByClassName("mobileNavUlLinks");
 
 
-// plusButton.addEventListener("click", expandlinks)
 
-// function expandlinks (){
-//     // event.preventDefault();
-//     expandibleLinks.style.display = "show";
-// };
+for (i = 0; i < accordionTitle.length; i++) {
+  accordionTitle[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let item = this.nextElementSibling;
+    if (item.style.maxHeight) {
+      item.style.maxHeight = null;
+    }else {
+      item.style.maxHeight = item.scrollHeight + "px";
+    } 
+  });
+}
 
-// plusButton.addEventListener("click", ()=>{
-//         event.preventDefault()
-//     if(expandibleHiddenLinks.style.display == "none"){
-//         expandibleHiddenLinks.style.display = "show";
-//     } else expandibleHiddenLinks.style.disply = "none"
-//      console.log("clicked");
-// });
-
-plusButton.addEventListener("click", (event)=>{
-    event.preventDefault()
-    expandibleHiddenLinks.classList.toggle("expandibleHiddenLinkList");
-});
-
-linkButton.addEventListener("click", (event)=>{
-    event.preventDefault()
-    expandibleHiddenLinks.classList.toggle("expandibleHiddenLinkList");
-});
 

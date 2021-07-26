@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
@@ -13,14 +12,10 @@
 
 .navItems {
   font-size: 2.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   max-width: 100rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-weight: 200;
 }
 
@@ -90,12 +85,8 @@ li a {
   }
 
   .mobileNavigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -157,12 +148,8 @@ li a {
 .iPadProLinks {
   font-size: 5rem;
   max-width: 23rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: auto;
   margin-top: 18rem;
   font-weight: 300;
@@ -198,12 +185,8 @@ li a {
 .iPhoneLinks {
   font-size: 5rem;
   max-width: 21rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: auto;
   margin-top: 21rem;
   font-weight: 300;
@@ -239,12 +222,8 @@ li a {
 .iMacLinks {
   font-size: 5rem;
   max-width: 23rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: auto;
   margin-top: 18.5rem;
   font-weight: 300;
@@ -346,12 +325,8 @@ li a {
   max-width: 120rem;
   text-align: left;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-weight: 400;
   padding-bottom: 2rem;
 }
@@ -404,8 +379,6 @@ footer {
 
 .callAppleContainer {
   padding: 1rem 1.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 120rem;
   margin-left: auto;
@@ -444,22 +417,14 @@ footer {
   max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .copyRightLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-bottom: 0.5rem;
   font-size: 1.3rem;
 }
@@ -495,19 +460,10 @@ li span {
 .footerMobileNav {
   color: gray;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerMobileNav ul {
@@ -517,12 +473,24 @@ li span {
 
 .mobileNavUlLinks {
   margin: 0 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mobileNavUlLinks.active .mobileNavContainer {
+  max-height: 10rem;
+}
+
+.mobileNavUlLinks::after {
+  content: "+";
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.active::after {
+  content: "-";
+  font-size: 1.5rem;
 }
 
 .MobileNavBorderBottom {
@@ -539,17 +507,21 @@ li span {
 }
 
 .expandibleHiddenLinkList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
-  top: -15px;
+  top: -11px;
   margin-left: 15px;
-  display: none;
+}
+
+.mobileNavContainer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.mobileNavContainer.active {
+  max-height: 10rem;
 }
 
 @media (min-width: 792px) {
@@ -613,8 +585,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -799,8 +770,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -834,8 +804,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -916,9 +885,7 @@ template {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(64rem, 1fr));
   grid-template-rows: 3fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   justify-items: center;
   grid-column-gap: auto;
   grid-row-gap: 3px;

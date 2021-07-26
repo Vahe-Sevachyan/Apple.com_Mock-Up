@@ -130,6 +130,20 @@ li span {
   margin: 0 1.5rem;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+.mobileNavUlLinks.active .mobileNavContainer{
+  max-height: 10rem;
+}
+.mobileNavUlLinks::after{
+content: "+";
+margin-top: .8rem;
+font-size: 1.5rem;
+}
+.active::after{
+content: "-";
+font-size: 1.5rem;
+// transform: translate();
 }
 .MobileNavBorderBottom {
   border-bottom: 0.1px solid rgb(190, 186, 186);
@@ -139,6 +153,7 @@ li span {
   margin: auto;
 }
 .mobileNavUlLinks a {
+  
   margin-bottom: 0.8rem;
   margin-top: 1rem;
 }
@@ -146,13 +161,18 @@ li span {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -15px;
+  top: -11px;
   margin-left: 15px;
-  display: none;
 }
-
+.mobileNavContainer{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+.mobileNavContainer.active{
+  max-height: 10rem;
+}
 // <!-- *********MOBILE NAV*************  -->
-
 @media (min-width: 792px) {
   .footerMobileNav {
     display: none;
