@@ -1,105 +1,151 @@
-.navItems{
-    font-size: 2.2rem;
+.navItems {
+  font-size: 2.2rem;
+  display: flex;
+  margin: auto;
+  max-width: 100rem;
+  justify-content: space-between;
+  font-weight: 200;
+}
+.navBarContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: black;
+  color: whitesmoke;
+  padding-top: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+li a {
+  color: white;
+}
+.DeliveryHeader {
+  font-weight: 300;
+  font-size: 1.3rem;
+  max-width: 57rem;
+  margin: auto;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.shopOnlineHeader {
+  color: rgb(78, 157, 236);
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.deliveryHeaderContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+.apple-svg {
+  width: 1.7rem;
+}
+.magnifying-glass {
+  padding-top: 2px;
+  width: 2rem;
+}
+.shopping-bag {
+  width: 2rem;
+  color: white;
+}
+.hamburger {
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  margin-bottom: 1px;
+}
+.twoLineHamburgerMenu {
+  position: relative;
+  top: 5px;
+  height: 0.9rem;
+  cursor: pointer;
+}
+//Mobile View Nav Menu*******************
+.mobileNav {
+  width: 100vw;
+  height: 100vh;
+  max-height: 0;
+}
+.mobileNav.show {
+  max-height: 94.8vh;
+  transition: max-height 0.6s ease-out;
+}
+h3 {
+  font-size: 6rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+h3:hover {
+  cursor: pointer;
+}
+.SearchApple {
+  color: white;
+  width: 93%;
+  background-color: rgb(71, 69, 69);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 5px 6px;
+  border-bottom: solid 0.5px rgb(119, 116, 116);
+  box-shadow: none;
+}
+.mobileNavList h3 {
+  width: 86%;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 0.1px solid rgb(119, 116, 116);
+  margin-left: 1.6rem;
+}
+.main.show {
+  display: none;
+}
+.footer.show {
+  display: none;
+}
+.deliveryHeaderContainer.show {
+  display: none;
+}
+@media (max-width: 792px) {
+  .navItems {
+    display: none;
+  }
+  .mobileNavigation {
     display: flex;
-    margin: auto;
-    max-width: 100rem;
     justify-content: space-between;
-    font-weight: 200;
+    width: 100%;
+  }
+  .apple-svg {
+    padding-bottom: 5px;
+  }
+  .shopping-bag {
+    padding-bottom: 5px;
+  }
+  .shopOnlineHeader {
+    font-size: 1.1rem;
+  }
+  .DeliveryHeader {
+    font-size: 1.1rem;
+  }
+  .DeliveryHeader {
+    padding-left: 15px;
+  }
 }
-.navBarContainer{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    background-color:#3a3a3a;
-    color: whitesmoke;
-    padding-top: 1.4rem;
-    padding-bottom: .5rem;
+@media (min-width: 792px) {
+  .mobileNavigation {
+    display: none;
+  }
 }
-li a{
-    color: white;
+@media (max-width: 414px) {
+  .shopOnlineHeader {
+    font-size: 0.9rem;
+  }
+  .DeliveryHeader {
+    font-size: 1rem;
+  }
 }
-.DeliveryHeader{
-    font-weight: 300;
-    font-size: 1.3rem;
-    max-width: 57rem;
-    margin: auto;
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
-}
-.shopOnlineHeader{
-    color: rgb(78, 157, 236);
-    font-size: 1.3rem;
-    font-weight: 200;
-}
-.deliveryHeaderContainer{
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100vw;
-    background-color: #f5f5f7;
-}
-.apple-svg{
-    width: 1.7rem;
-}
-.magnifying-glass{
-    padding-top: 2px;
-    width: 2rem;
-}
-.shopping-bag{
-    width: 2rem;
-    color: white;
-}
-.hamburger{
-    border-radius: 5px;
-    padding-top: .5rem;
-    margin-bottom: 1px;
-}
-.twoLineHamburgerMenu{
-    margin-top: 5px;
-    height: .9rem;
-}
-
-@media (max-width:792px){
-    .navItems{
-        display:none; 
-    }
-    .mobileNavigation{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .apple-svg{
-        padding-bottom: 5px;
-    }
-    .shopping-bag{
-        padding-bottom: 5px;
-    }
-    .shopOnlineHeader{
-        font-size: 1.1rem;
-    }
-    .DeliveryHeader{
-        font-size: 1.1rem;
-    }
-    .DeliveryHeader{
-        padding-left: 15px;
-    }
-}
-@media (min-width:792px){
-    .mobileNavigation{
-        display:none;
-    }
-}
-@media (max-width:414px){
-    .shopOnlineHeader{
-        font-size: .9rem;
-    }
-    .DeliveryHeader{
-        font-size: 1rem;
-    }
-}
-@media (max-width:360px){
-    .shopOnlineHeader{
-        font-size: .9rem;
-    }
-    .DeliveryHeader{
-        font-size: .9rem;
-    }
+@media (max-width: 360px) {
+  .shopOnlineHeader {
+    font-size: 0.9rem;
+  }
+  .DeliveryHeader {
+    font-size: 0.9rem;
+  }
 }

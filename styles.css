@@ -22,7 +22,7 @@
 .navBarContainer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  background-color: #3a3a3a;
+  background-color: black;
   color: whitesmoke;
   padding-top: 1.4rem;
   padding-bottom: 0.5rem;
@@ -75,8 +75,63 @@ li a {
 }
 
 .twoLineHamburgerMenu {
-  margin-top: 5px;
+  position: relative;
+  top: 5px;
   height: 0.9rem;
+  cursor: pointer;
+}
+
+.mobileNav {
+  width: 100vw;
+  height: 100vh;
+  max-height: 0;
+}
+
+.mobileNav.show {
+  max-height: 94.8vh;
+  transition: max-height 0.6s ease-out;
+}
+
+h3 {
+  font-size: 6rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3:hover {
+  cursor: pointer;
+}
+
+.SearchApple {
+  color: white;
+  width: 93%;
+  background-color: #474545;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 5px 6px;
+  border-bottom: solid 0.5px #777474;
+  box-shadow: none;
+}
+
+.mobileNavList h3 {
+  width: 86%;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 0.1px solid #777474;
+  margin-left: 1.6rem;
+}
+
+.main.show {
+  display: none;
+}
+
+.footer.show {
+  display: none;
+}
+
+.deliveryHeaderContainer.show {
+  display: none;
 }
 
 @media (max-width: 792px) {
@@ -476,10 +531,6 @@ li span {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-}
-
-.mobileNavUlLinks.active .mobileNavContainer {
-  max-height: 10rem;
 }
 
 .mobileNavUlLinks::after {

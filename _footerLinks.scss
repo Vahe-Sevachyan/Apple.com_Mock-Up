@@ -132,18 +132,17 @@ li span {
   justify-content: space-between;
   cursor: pointer;
 }
-.mobileNavUlLinks.active .mobileNavContainer{
-  max-height: 10rem;
+// .mobileNavUlLinks.active .mobileNavContainer {
+//   max-height: 10rem;
+// }
+.mobileNavUlLinks::after {
+  content: "+";
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
 }
-.mobileNavUlLinks::after{
-content: "+";
-margin-top: .8rem;
-font-size: 1.5rem;
-}
-.active::after{
-content: "-";
-font-size: 1.5rem;
-// transform: translate();
+.active::after {
+  content: "-";
+  font-size: 1.5rem;
 }
 .MobileNavBorderBottom {
   border-bottom: 0.1px solid rgb(190, 186, 186);
@@ -153,7 +152,6 @@ font-size: 1.5rem;
   margin: auto;
 }
 .mobileNavUlLinks a {
-  
   margin-bottom: 0.8rem;
   margin-top: 1rem;
 }
@@ -164,12 +162,12 @@ font-size: 1.5rem;
   top: -11px;
   margin-left: 15px;
 }
-.mobileNavContainer{
+.mobileNavContainer {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease-out;
 }
-.mobileNavContainer.active{
+.mobileNavContainer.active {
   max-height: 10rem;
 }
 // <!-- *********MOBILE NAV*************  -->
